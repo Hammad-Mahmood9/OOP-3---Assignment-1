@@ -87,7 +87,7 @@ public class AppDriver {
         
         
         //
-        // Name Here
+        // Manjot Sigh
 		// refer to demo02 Student.java for comparable implementation, and NameCompare.java or GradeCompare for comparator implementations
         //
 	class ShapesComparator implements Comparator<Shape>{
