@@ -90,6 +90,24 @@ public class AppDriver {
         // Name Here
 		// refer to demo02 Student.java for comparable implementation, and NameCompare.java or GradeCompare for comparator implementations
         //
+	class ShapesComparator implements Comparator<Shape>{
+		private String compareType;
+
+        	public ShapesComparator(String compareType) {
+                	this.compareType = compareType;
+		}
+
+		public int compare(Shape s1, Shape s2){
+			switch(compareType){
+				case "a":
+					return Double.compare(s1.calcBaseArea(), s2.calcBaseAreaa());
+				case "v":
+					return Double.compare(s1.calcVolume(), s2.calcVolume());
+				default:
+					throw new IllegalArgumentException("Invalid comparison type: " + compareType);
+			}
+		}
+	}
 
         
         //
