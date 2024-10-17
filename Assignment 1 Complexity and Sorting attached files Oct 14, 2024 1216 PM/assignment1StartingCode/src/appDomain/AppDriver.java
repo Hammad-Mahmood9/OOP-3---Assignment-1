@@ -97,6 +97,7 @@ public class AppDriver {
                 	this.compareType = compareType;
 		}
 
+		@Override
 		public int compare(Shape s1, Shape s2){
 			switch(compareType){
 				case "a":
