@@ -17,7 +17,10 @@ public abstract class Shape implements Comparable<Shape> {
 
     // Comparable implementation to compare by height
     @Override
-    public int compareTo(Shape s) {
-        return Double.compare(this.height, s.height);
+    public String toString() {
+        return this.getClass().getSimpleName() + 
+               " [Height=" + height + 
+               ", Base Area=" + calcBaseArea() + 
+               ", Volume=" + calcVolume() + "]";
     }
 }
