@@ -1,31 +1,25 @@
 package shapes;
 
 public class TriangularPrism extends Shape {
-    private double side;
+	private double side;
 
-    public TriangularPrism(double height, double side) {
-        super(height);
-        this.side = side;
-    }
+	public TriangularPrism(double height, double side) {
+		super(height);
+		this.side = side;
+	}
 
-    @Override
-    public double calcVolume() {
-        return (Math.sqrt(3) / 4) * Math.pow(side, 2) * height;
-    }
+	@Override
+	public double calcVolume() {
+		return (Math.sqrt(3) / 4) * Math.pow(side, 2) * height;
+	}
 
-    @Override
-    public double calcBaseArea() {
-        return (Math.sqrt(3) / 4) * Math.pow(side, 2);
-    }
-
-    @Override
-    public String toString() {
-        return "TriangularPrism [Height=" + height + ", Side=" + side +
-               ", Base Area=" + calcBaseArea() + ", Volume=" + calcVolume() + "]";
-    }
-
-    @Override
-    public int compareTo(Shape o) {
-        return Double.compare(this.height, o.height);
+	@Override
+	public double calcBaseArea() {
+		return (Math.sqrt(3) / 4) * Math.pow(side, 2);
+	}
+	
+	@Override
+    public String getName() {
+        return "Triangular Prism";
     }
 }

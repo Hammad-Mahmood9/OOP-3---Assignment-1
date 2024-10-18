@@ -17,15 +17,9 @@ public class PentagonalPrism extends Shape {
     public double calcBaseArea() {
         return 5 * Math.pow(side, 2) * Math.tan(Math.toRadians(54)) / 4;
     }
-
+    
     @Override
-    public String toString() {
-        return "PentagonalPrism [Height=" + height + ", Side=" + side +
-               ", Base Area=" + calcBaseArea() + ", Volume=" + calcVolume() + "]";
-    }
-
-    @Override
-    public int compareTo(Shape o) {
-        return Double.compare(this.height, o.height);
+    public String getName() {
+        return "Pentagonal Prism";
     }
 }

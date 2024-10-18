@@ -17,15 +17,9 @@ public class Pyramid extends Shape {
     public double calcBaseArea() {
         return Math.pow(side, 2);
     }
-
+    
     @Override
-    public String toString() {
-        return "Pyramid [Height=" + height + ", Side=" + side +
-               ", Base Area=" + calcBaseArea() + ", Volume=" + calcVolume() + "]";
-    }
-
-    @Override
-    public int compareTo(Shape o) {
-        return Double.compare(this.height, o.height);
+    public String getName() {
+        return "Pyramid";
     }
 }

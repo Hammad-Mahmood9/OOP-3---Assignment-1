@@ -17,15 +17,9 @@ public class Cylinder extends Shape {
     public double calcBaseArea() {
         return Math.PI * Math.pow(radius, 2);
     }
-
+    
     @Override
-    public String toString() {
-        return "Cylinder [Height=" + height + ", Radius=" + radius +
-               ", Base Area=" + calcBaseArea() + ", Volume=" + calcVolume() + "]";
-    }
-
-    @Override
-    public int compareTo(Shape o) {
-        return Double.compare(this.height, o.height);
+    public String getName() {
+        return "Cylinder";
     }
 }
