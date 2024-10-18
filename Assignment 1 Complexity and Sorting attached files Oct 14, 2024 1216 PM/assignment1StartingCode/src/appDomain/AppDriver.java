@@ -121,19 +121,6 @@ public class AppDriver {
         // Curtis Borson
 		// refer to demo03 OfficeManager.java on how to create specific objects using reflection from a String
         //
-        try {
-            // Example: Create a Cylinder with height and radius using reflection
-            Shape cylinder = createShapeUsingReflection("shapes.Cylinder", 10.0, 5.0);
-            System.out.println("Created object: " + cylinder.getClass().getSimpleName() + 
-                               ", Volume: " + cylinder.calcVolume() + 
-                               ", Base Area: " + cylinder.calcBaseArea());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    
-
-    // Method for dynamic shape creation using reflection
     public static Shape createShapeUsingReflection(String className, Object... params) throws Exception {
         // Load the class by name
         Class<?> clazz = Class.forName(className);
