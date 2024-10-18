@@ -131,12 +131,7 @@ public class AppDriver {
             e.printStackTrace();
         }
     }
-
-    // Method to read shapes from the file (replace this with actual implementation)
-    public static Shape[] readShapesFromFile(String fileName) {
-        // (Placeholder for reading shapes from file)
-        return null; // Replace with actual implementation
-    }
+    
 
     // Method for dynamic shape creation using reflection
     public static Shape createShapeUsingReflection(String className, Object... params) throws Exception {
@@ -154,10 +149,5 @@ public class AppDriver {
 
         // Create a new instance of the class using the constructor
         return (Shape) constructor.newInstance(params);
-    }
-
-    // Placeholder for the sorting logic (another group member will implement this)
-    public static void sortShapes(Shape[] shapes, String comparisonType, String sortingAlgorithm) {
-        // Another group member will implement sorting and comparators
     }
 }
